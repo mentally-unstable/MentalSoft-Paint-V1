@@ -5,7 +5,7 @@
 #include <cstdlib>
 #include <ctime>
 
-#include "snake.h"
+#include "player.h"
 #include <ncurses.h>
 
 int main(int argc, char ** argv)
@@ -31,9 +31,10 @@ int main(int argc, char ** argv)
     mvwprintw(info, 2, 1, " ");
     mvwprintw(info, 3, 2, "INFO:");
     mvwprintw(info, 4, 1, "----------------------------");
-    mvwprintw(info, 6, 2, "- x: to leave (or CTRL-C)");
-    mvwprintw(info, 8, 2, "- d: delete mode");
-    mvwprintw(info, 10, 2, "- e: draw mode");
+    mvwprintw(info, 5, 2, "- x: to leave (or CTRL-C)");
+    mvwprintw(info, 6, 2, "- d: delete mode");
+    mvwprintw(info, 7, 2, "- e: draw mode");
+    mvwprintw(info, 8, 2, "- c: clear all");
 
     /* decided not to implement, but *could* in the future
     mvwprintw(info, 8, 2, "- colors:");
