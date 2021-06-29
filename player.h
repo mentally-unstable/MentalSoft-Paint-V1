@@ -106,6 +106,11 @@ int Player::getmv()
     int choice = wgetch(curwin);
     switch(choice)
     {
+        case 'c':
+            wclear(curwin);
+            wborder(curwin, '#', '#', '#', '#', '#', '#', '#', '#');
+            wrefresh(curwin);
+            break;
         case 'd':
             penup = true;
             break;
